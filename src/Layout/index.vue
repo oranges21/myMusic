@@ -2,7 +2,7 @@
   <div>
     <div class="common-layout">
       <el-container>
-        <el-aside width="200px">Aside</el-aside>
+        <el-aside width="200px"><Aside></Aside></el-aside>
         <el-container>
           <el-header><Header></Header></el-header>
           <el-main>
@@ -17,7 +17,6 @@
 <script setup>
 import Aside from "./components/Aside/index.vue";
 import Header from "./components/Header/index.vue";
-import Content from "./components/Content/index.vue";
 </script>
 
 <style scoped>

@@ -1,6 +1,7 @@
 import Layout from "@/Layout/index.vue";
 import Login from "@/views/Login/index.vue";
 import Recommed from "@/views/Recommed/index.vue";
+import myMusic from "@/views/myMusic/index.vue";
 // import Login from "@/views/Login/index.vue";
 
 import {
@@ -22,11 +23,11 @@ const router = createRouter({
           name: "recommed",
           component: () => Recommed,
         },
-        // {
-        //   path: "/my",
-        //   name: "my",
-        //   component: () => My,
-        // },
+        {
+          path: "/myMusic",
+          name: "myMusic",
+          component: () => myMusic,
+        },
       ],
     },
     { path: "/login", name: "login", component: Login },
