@@ -64,8 +64,12 @@ const errorHandler = () => true;
 </script>
 
 <style scoped>
+.el-header {
+  height: 45px;
+}
 .header {
   display: flex;
+  /* height: 40px; */
 }
 .box {
   width: 100%;
