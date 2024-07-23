@@ -18,7 +18,7 @@
         </el-input>
       </div>
     </div>
-    <div class="header_avater">
+    <div class="header_avater" v-if="false">
       <el-row class="demo-avatar demo-basic">
         <el-col :span="5">
           <div class="demo-basic--circle">
@@ -47,13 +47,13 @@
               <el-dropdown-item>Action 1</el-dropdown-item>
               <el-dropdown-item>Action 2</el-dropdown-item>
               <el-dropdown-item>Action 3</el-dropdown-item>
-              <el-dropdown-item disabled>Action 4</el-dropdown-item>
-              <el-dropdown-item divided>Action 5</el-dropdown-item>
+              <el-dropdown-item divided>退出登录</el-dropdown-item>
             </el-dropdown-menu>
           </template>
         </el-dropdown>
       </div>
     </div>
+    <a href="https://www.baidu.com" class="toLogin" v-else>登录</a>
   </div>
 </template>
 
@@ -70,6 +70,7 @@ const errorHandler = () => true;
 .header {
   display: flex;
   /* height: 40px; */
+  /* background-color: #242424; */
 }
 .box {
   width: 100%;
@@ -103,5 +104,10 @@ const errorHandler = () => true;
 .el-icon--right {
   margin-top: 12px;
   margin-left: 15px;
+}
+.toLogin {
+  margin-left: 457px;
+  margin-top: 10px;
+  font-size: 11px;
 }
 </style>
