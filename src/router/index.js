@@ -1,6 +1,6 @@
 import Layout from "@/Layout/index.vue";
 import Login from "@/views/Login/index.vue";
-import Recommed from "@/views/Recommed/index.vue";
+import Recommend from "@/views/Recommend/index.vue";
 import myMusic from "@/views/myMusic/index.vue";
 import Lately from "@/views/Lately/index.vue";
 import Podcast from "@/views/Podcast/index.vue";
@@ -21,12 +21,12 @@ const router = createRouter({
     {
       path: "/",
       component: Layout,
-      redirect: "recommed",
+      redirect: "recommend",
       children: [
         {
-          path: "/recommed",
-          name: "recommed",
-          component: () => Recommed,
+          path: "/recommend",
+          name: "recommend",
+          component: () => Recommend,
         },
         {
           path: "/myMusic",

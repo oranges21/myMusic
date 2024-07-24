@@ -25,7 +25,7 @@
         style="width: 880px"
       >
         >
-        <el-table-column prop="ID" label="ID" width="100"> </el-table-column>
+        <el-table-column prop="ID" label="ID" width="100"></el-table-column>
         <el-table-column prop="title" label="歌曲标题" width="250">
         </el-table-column>
         <el-table-column prop="time" label="时长"> </el-table-column>
